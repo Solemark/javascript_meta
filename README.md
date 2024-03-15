@@ -1,9 +1,5 @@
 # javascript-meta
 
-get submodule code:
-
-    git submodule update --init --recursive
-
 TS/JS files do not run natively!
 Need a runner like Deno or NodeJs to run these files
 
