@@ -17,7 +17,7 @@ export default {
                 <p>
                     Name: {{ weapon.name }} <br />
                     Type: {{ weapon.type }} <br />
-                    rarity: {{ weapon.rarity }}* <br />
+                    rarity: {{ weapon.rarity }} star <br />
                     Base Attack: {{ weapon.baseAttack }} <br />
                     Sub Stat: {{ weapon.subStat }} <br />
                     Passive: {{ weapon.passiveName }} <br />
