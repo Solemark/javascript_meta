@@ -3,9 +3,6 @@
  * @param {string} str 
  * @returns {string}
  */
-const removeSpaces = str => {
-    str = str.split(' ').join('')
-    return str
-}
+const removeSpaces = str => str.split(' ').join('')
 
 module.exports = { removeSpaces }

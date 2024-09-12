@@ -1,35 +1,28 @@
 /**
  * reverse an array using another array
- * @param {any[]} a1 
+ * @param {any[]} arr 
  * @returns {any[]}
  */
-const reverseArray = a1 => {
-    const a2 = []
-    let c = a1.length - 1
-    for (let i = 0; i < a1.length; i++) {
-        a2.push(a1[c])
-        c--
-    }
-    return a2
-}
+const reverseArray = arr => arr.reverse()
+
 
 /**
  * reverse a single array
- * @param {any[]} a1 
+ * @param {any[]} arr 
  * @returns {any[]}
  */
-const reverseSingleArray = a1 => {
-    let c = a1.length - 1
+const reverseSingleArray = arr => {
+    let c = arr.length - 1
     let x = 0
     let y = 0
     for (let i = 0; i <= c; i++) {
-        x = a1[i]
-        y = a1[c]
-        a1[c] = x
-        a1[i] = y
+        x = arr[i]
+        y = arr[c]
+        arr[c] = x
+        arr[i] = y
         c--
     }
-    return a1
+    return arr
 }
 
 module.exports = { reverseArray, reverseSingleArray }

@@ -1,16 +1,8 @@
 /**
  * remove negative values from an array
- * @param {number[]} a1 
+ * @param {number[]} arr
  * @returns {number[]}
  */
-const filterNegative = a1 => {
-    const a2 = []
-    for (let i = 0; i < a1.length; i++) {
-        if (a1[i] >= 0) {
-            a2.push(a1[i])
-        }
-    }
-    return a2
-}
+const filterNegative = arr => arr.filter((i) => i >= 0)
 
 module.exports = { filterNegative }
