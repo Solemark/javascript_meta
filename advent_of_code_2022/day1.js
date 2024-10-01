@@ -1,10 +1,11 @@
 /**
  * Perform day1
  * @param {string[]} data input data
- * @return {string} 
+ * @return {string}
  */
 const day1 = data => {
-    let totals = [], total = 0
+    let totals = [],
+        total = 0
     data.forEach(item => {
         if (item == "") [totals, total] = [[...totals, total], 0]
         else total += Number(item)
@@ -18,7 +19,8 @@ const day1 = data => {
  * @return {number}
  */
 const get_largest = totals => {
-    let key = 0, total = 0
+    let key = 0,
+        total = 0
     totals.forEach((t, k) => {
         if (total < t) [key, total] = [k, t]
     })

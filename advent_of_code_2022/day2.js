@@ -33,8 +33,8 @@ const results = {
 
 /**
  * perform day2
- * @param {string[][]} data 
- * @return {number} 
+ * @param {string[][]} data
+ * @return {number}
  */
 const day2 = data => {
     let total = 0
