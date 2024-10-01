@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide } = require('./calc')
+const { add, subtract, multiply, divide } = require("./calc")
 
 /**
  * data provider for tests
@@ -10,30 +10,30 @@ const getData = () => [
     [-5, -5],
 ]
 
-test('add y to x', () => {
+test("add y to x", () => {
     let data = getData()
-    data.forEach((item) => {
+    data.forEach(item => {
         expect(add(item[0], item[1])).toBe(item[0] + item[1])
     })
 })
 
-test('subract y from x', () => {
+test("subract y from x", () => {
     let data = getData()
-    data.forEach((item) => {
+    data.forEach(item => {
         expect(subtract(item[0], item[1])).toBe(item[0] - item[1])
     })
 })
 
-test('multiply x by y', () => {
+test("multiply x by y", () => {
     let data = getData()
-    data.forEach((item) => {
+    data.forEach(item => {
         expect(multiply(item[0], item[1])).toBe(item[0] * item[1])
     })
 })
 
-test('divide y by x', () => {
+test("divide y by x", () => {
     let data = getData()
-    data.forEach((item) => {
+    data.forEach(item => {
         expect(divide(item[0], item[1])).toBe(item[0] / item[1])
     })
 })

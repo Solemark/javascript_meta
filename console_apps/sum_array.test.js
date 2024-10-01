@@ -1,4 +1,4 @@
-const { sumArray } = require('./sum_array')
+const { sumArray } = require("./sum_array")
 
 /**
  * data provider for tests
@@ -12,7 +12,7 @@ const getData = () => [
     [15, 39],
 ]
 
-test('Sum an array', () => {
+test("Sum an array", () => {
     let [input, result] = getData()
     for (let i = 0; i < input.length; i++) {
         expect(sumArray(input[i])).toEqual(result[i])

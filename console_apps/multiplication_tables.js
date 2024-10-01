@@ -1,7 +1,6 @@
 /**
- * 
- * @param {number} a 
- * @param {number} max 
+ * @param {number} a
+ * @param {number} max
  * @returns {string[]}
  */
 const outputTable = (a, max) => {

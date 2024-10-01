@@ -1,25 +1,16 @@
 /**
  * check if a string is a palindrome
- * @param {string} str 
+ * @param {string} str
  * @returns {string}
  */
 const checkPalindrome = str => {
-    let x = 0
-    let y = str.length - 1
-    let output = true
-    if (typeof str === 'string') {
-        while (x < y) {
-            if (str[x] != str[y]) {
-                output = false
-                break
-            }
-            x++
-            y--
-        }
-    } else {
-        output = false
+    let x = 0,
+        y = str.length - 1
+    while (x < y) {
+        if (str[x] != str[y]) return false
+        ;[x, y] = [x + 1, y - 1]
     }
-    return output
+    return true
 }
 
 module.exports = { checkPalindrome }

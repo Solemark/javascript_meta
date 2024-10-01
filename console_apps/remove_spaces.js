@@ -1,8 +1,8 @@
 /**
  * remove spaces from a string
- * @param {string} str 
+ * @param {string} str
  * @returns {string}
  */
-const removeSpaces = str => str.split(' ').join('')
+const removeSpaces = str => str.split(" ").join("")
 
 module.exports = { removeSpaces }
