@@ -38,9 +38,9 @@ const results = {
  */
 const day2 = data => {
     let total = 0
-    for (let i = 0; i < data.length; i++) {
-        total += points[rps[data[i][1]]] + results[`${rps[data[i][0]]}${rps[data[i][1]]}`]
-    }
+    data.forEach(item => {
+        total += points[rps[item[1]]] + results[`${rps[item[0]]}${rps[item[1]]}`]
+    })
     return total
 }
 

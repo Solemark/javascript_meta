@@ -19,9 +19,9 @@ const day1 = data => {
  */
 const get_largest = totals => {
     let key = 0, total = 0
-    for (const [k, t] of totals.entries()) {
+    totals.forEach((t, k) => {
         if (total < t) [key, total] = [k, t]
-    }
+    })
     return key + 1
 }
 
