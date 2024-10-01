@@ -32,16 +32,16 @@ const results = {
 }
 
 /**
- * perform day2 recursively
+ * perform day2
  * @param {string[][]} data 
- * @param {number} i 
- * @param {number} total 
  * @return {number} 
  */
-const day2 = (data, i = 0, total = 0) => {
-    if (data.length - 1 < i) return total
-    const round = points[rps[data[i][1]]] + results[`${rps[data[i][0]]}${rps[data[i][1]]}`]
-    return day2(data, i + 1, total + round)
+const day2 = data => {
+    let total = 0
+    for (let i = 0; i < data.length; i++) {
+        total += points[rps[data[i][1]]] + results[`${rps[data[i][0]]}${rps[data[i][1]]}`]
+    }
+    return total
 }
 
 module.exports = day2
